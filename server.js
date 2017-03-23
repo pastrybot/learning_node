@@ -1,9 +1,16 @@
+var express = require ('express');
+var app = express();
 
-var http = require('http');
-//node module that creates a small server
-//we are making a fucking server
+app.get('/greeting', function(req, res){
+    res.send("you found the greeting endpoint!")
+});
 
-http.createServer(function(request, response){
-  response.end('hello world');
-console.log("Your server is running at port 3000");
-}).listen(3000); //this will start up our server at port 3000
+app.get('/sadface', function(req, res){
+  res.send('This is bullshit😰')
+});
+app.get('/happy', function(req, res){
+  res.send('We are going to understand this so well!😄')
+});
+var server = app.listen(3000, function(){
+  console.log('Your app is running on port 3000')
+});

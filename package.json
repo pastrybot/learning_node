@@ -1,0 +1,23 @@
+{
+  "name": "learning_node",
+  "version": "1.0.0",
+  "description": "a node project must have a package.json, the easiest way to add one, is to run the command 'npm init'",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pastrybot/learning_node.git"
+  },
+  "author": "Katie Dahlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pastrybot/learning_node/issues"
+  },
+  "homepage": "https://github.com/pastrybot/learning_node#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
